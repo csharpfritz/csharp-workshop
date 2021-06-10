@@ -2,6 +2,7 @@
 
 Tentative Agenda
 
+| Time | Topic |
 | --- | --- |
 | 8-930 | C# 8 / 9 Features |
 | 945 - 1100 | Puzzles |
