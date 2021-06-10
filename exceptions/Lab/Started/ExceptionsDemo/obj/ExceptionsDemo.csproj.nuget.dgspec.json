@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/csharpfritz/dev/csharp-workshop/exceptions/Lab/Started/ExceptionsDemo/ExceptionsDemo.csproj": {}
+  },
+  "projects": {
+    "/home/csharpfritz/dev/csharp-workshop/exceptions/Lab/Started/ExceptionsDemo/ExceptionsDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/csharpfritz/dev/csharp-workshop/exceptions/Lab/Started/ExceptionsDemo/ExceptionsDemo.csproj",
+        "projectName": "ExceptionsDemo",
+        "projectPath": "/home/csharpfritz/dev/csharp-workshop/exceptions/Lab/Started/ExceptionsDemo/ExceptionsDemo.csproj",
+        "packagesPath": "/home/csharpfritz/.nuget/packages/",
+        "outputPath": "/home/csharpfritz/dev/csharp-workshop/exceptions/Lab/Started/ExceptionsDemo/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/csharpfritz/dev/nuget.config",
+          "/home/csharpfritz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "targetAlias": "netcoreapp2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "targetAlias": "netcoreapp2.0",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.100-preview.4.21255.9/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
