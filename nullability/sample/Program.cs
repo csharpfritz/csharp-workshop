@@ -7,11 +7,11 @@ namespace sample
         static void Main(string[] args)
         {
 
-            // ValueTypes.Defaults();
+            ValueTypes.Defaults();
 
             // ValueTypes.Arrays();
 
-            ReferenceTypes.SimpleNull();
+            //ReferenceTypes.SimpleNull();
 
             //ReferenceTypes.Property();
 
