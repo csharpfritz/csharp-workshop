@@ -3,12 +3,17 @@ using System.ComponentModel.DataAnnotations;
 namespace sample
 {
 
-// #nullable enable
+#nullable disable
 
   public class Hat {
 
+		public Hat(string name)
+		{
+				this.Name = name;
+		}
+
     [Required]
-    public string Name { get; set; } = string.Empty;
+    public string Name { get; set; }
 
     public int AcquiredYear { get; set; }
 
@@ -23,14 +28,14 @@ namespace sample
         public static void Bar()
         {
 
-            Hat hat = new();
+            Hat hat = new("Bar Hat");
             // Hat? hat = new();
             //hat.Name = null;
 
         }
 
     }
-// #nullable restore
+ #nullable restore
 
 
     public class Customer

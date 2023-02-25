@@ -7,7 +7,7 @@ namespace sample
         static void Main(string[] args)
         {
 
-            ValueTypes.Defaults();
+            //ValueTypes.Defaults();
 
             // ValueTypes.Arrays();
 
@@ -15,7 +15,9 @@ namespace sample
 
             //ReferenceTypes.Property();
 
-            //  ReferenceTypes.NullForgiving();
+           //  ReferenceTypes.NullForgiving();
+
+					 Linq.Test();
 
         }
     }

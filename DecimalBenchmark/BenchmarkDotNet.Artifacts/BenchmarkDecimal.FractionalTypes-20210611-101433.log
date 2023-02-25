@@ -1,0 +1,1013 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 9 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+Unable to find .sln file. Will use current directory /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark to search for project file. If you don't use .sln file on purpose it should not be a problem.
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e
+// command took 0.79s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e
+// command took 1.56s and exited with 0
+// ***** Done, took 00:00:02 (2.45 sec)   *****
+// Found 9 benchmarks:
+//   FractionalTypes.DecimalAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.DecimalMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.DecimalDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.DoubleAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.DoubleMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.DoubleDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.SingleAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.SingleMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+//   FractionalTypes.SingleDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+// **************************
+// Benchmark: FractionalTypes.DecimalAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.DecimalAdd" --job "ShortRun" --benchmarkId 0 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 256355.00 ns, 256.3550 us/op
+WorkloadJitting  1: 1 op, 247772.00 ns, 247.7720 us/op
+
+OverheadJitting  2: 16 op, 224944.00 ns, 14.0590 us/op
+WorkloadJitting  2: 16 op, 328307.00 ns, 20.5192 us/op
+
+WorkloadPilot    1: 16 op, 774.00 ns, 48.3750 ns/op
+WorkloadPilot    2: 32 op, 1044.00 ns, 32.6250 ns/op
+WorkloadPilot    3: 64 op, 1460.00 ns, 22.8125 ns/op
+WorkloadPilot    4: 128 op, 2255.00 ns, 17.6172 ns/op
+WorkloadPilot    5: 256 op, 3928.00 ns, 15.3438 ns/op
+WorkloadPilot    6: 512 op, 6284.00 ns, 12.2734 ns/op
+WorkloadPilot    7: 1024 op, 12289.00 ns, 12.0010 ns/op
+WorkloadPilot    8: 2048 op, 28955.00 ns, 14.1382 ns/op
+WorkloadPilot    9: 4096 op, 56353.00 ns, 13.7581 ns/op
+WorkloadPilot   10: 8192 op, 100389.00 ns, 12.2545 ns/op
+WorkloadPilot   11: 16384 op, 191770.00 ns, 11.7047 ns/op
+WorkloadPilot   12: 32768 op, 370500.00 ns, 11.3068 ns/op
+WorkloadPilot   13: 65536 op, 751489.00 ns, 11.4668 ns/op
+WorkloadPilot   14: 131072 op, 1490806.00 ns, 11.3739 ns/op
+WorkloadPilot   15: 262144 op, 3179831.00 ns, 12.1301 ns/op
+WorkloadPilot   16: 524288 op, 5936691.00 ns, 11.3233 ns/op
+WorkloadPilot   17: 1048576 op, 11873095.00 ns, 11.3231 ns/op
+WorkloadPilot   18: 2097152 op, 23909111.00 ns, 11.4008 ns/op
+WorkloadPilot   19: 4194304 op, 47604663.00 ns, 11.3498 ns/op
+WorkloadPilot   20: 8388608 op, 96273730.00 ns, 11.4767 ns/op
+WorkloadPilot   21: 16777216 op, 184945200.00 ns, 11.0236 ns/op
+WorkloadPilot   22: 33554432 op, 332223001.00 ns, 9.9010 ns/op
+WorkloadPilot   23: 67108864 op, 662526950.00 ns, 9.8724 ns/op
+
+OverheadWarmup   1: 67108864 op, 91442114.00 ns, 1.3626 ns/op
+OverheadWarmup   2: 67108864 op, 91467806.00 ns, 1.3630 ns/op
+OverheadWarmup   3: 67108864 op, 91562276.00 ns, 1.3644 ns/op
+OverheadWarmup   4: 67108864 op, 91660495.00 ns, 1.3658 ns/op
+OverheadWarmup   5: 67108864 op, 109874879.00 ns, 1.6373 ns/op
+OverheadWarmup   6: 67108864 op, 91405874.00 ns, 1.3621 ns/op
+OverheadWarmup   7: 67108864 op, 91465930.00 ns, 1.3629 ns/op
+OverheadWarmup   8: 67108864 op, 91506157.00 ns, 1.3635 ns/op
+OverheadWarmup   9: 67108864 op, 91408435.00 ns, 1.3621 ns/op
+
+OverheadActual   1: 67108864 op, 91690778.00 ns, 1.3663 ns/op
+OverheadActual   2: 67108864 op, 91467574.00 ns, 1.3630 ns/op
+OverheadActual   3: 67108864 op, 91413376.00 ns, 1.3622 ns/op
+OverheadActual   4: 67108864 op, 91354650.00 ns, 1.3613 ns/op
+OverheadActual   5: 67108864 op, 91495203.00 ns, 1.3634 ns/op
+OverheadActual   6: 67108864 op, 91817455.00 ns, 1.3682 ns/op
+OverheadActual   7: 67108864 op, 91518389.00 ns, 1.3637 ns/op
+OverheadActual   8: 67108864 op, 91446608.00 ns, 1.3627 ns/op
+OverheadActual   9: 67108864 op, 91551851.00 ns, 1.3642 ns/op
+OverheadActual  10: 67108864 op, 91391904.00 ns, 1.3618 ns/op
+OverheadActual  11: 67108864 op, 91239789.00 ns, 1.3596 ns/op
+OverheadActual  12: 67108864 op, 91183883.00 ns, 1.3587 ns/op
+OverheadActual  13: 67108864 op, 91418375.00 ns, 1.3622 ns/op
+OverheadActual  14: 67108864 op, 91543966.00 ns, 1.3641 ns/op
+OverheadActual  15: 67108864 op, 91504908.00 ns, 1.3635 ns/op
+
+WorkloadWarmup   1: 67108864 op, 644059668.00 ns, 9.5972 ns/op
+WorkloadWarmup   2: 67108864 op, 643484403.00 ns, 9.5887 ns/op
+WorkloadWarmup   3: 67108864 op, 643388958.00 ns, 9.5872 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 67108864 op, 642709408.00 ns, 9.5771 ns/op
+WorkloadActual   2: 67108864 op, 642442545.00 ns, 9.5731 ns/op
+WorkloadActual   3: 67108864 op, 642501977.00 ns, 9.5740 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 67108864 op, 551241834.00 ns, 8.2141 ns/op
+WorkloadResult   2: 67108864 op, 550974971.00 ns, 8.2102 ns/op
+WorkloadResult   3: 67108864 op, 551034403.00 ns, 8.2111 ns/op
+
+// AfterAll
+// Benchmark Process 26955 has exited with code 0
+
+Mean = 8.2118 ns, StdErr = 0.0012 ns (0.01%); N = 3, StdDev = 0.0021 ns
+Min = 8.2102 ns, Q1 = 8.2102 ns, Median = 8.2111 ns, Q3 = 8.2141 ns, Max = 8.2141 ns
+IQR = 0.0040 ns, LowerFence = 8.2042 ns, UpperFence = 8.2201 ns
+ConfidenceInterval = [8.1737 ns; 8.2499 ns] (CI 99.9%), Margin = 0.0381 ns (0.46% of Mean)
+Skewness = 0.31, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.DecimalMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.DecimalMultiply" --job "ShortRun" --benchmarkId 1 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 266078.00 ns, 266.0780 us/op
+WorkloadJitting  1: 1 op, 244865.00 ns, 244.8650 us/op
+
+OverheadJitting  2: 16 op, 226606.00 ns, 14.1629 us/op
+WorkloadJitting  2: 16 op, 267234.00 ns, 16.7021 us/op
+
+WorkloadPilot    1: 16 op, 816.00 ns, 51.0000 ns/op
+WorkloadPilot    2: 32 op, 812.00 ns, 25.3750 ns/op
+WorkloadPilot    3: 64 op, 1141.00 ns, 17.8281 ns/op
+WorkloadPilot    4: 128 op, 1850.00 ns, 14.4531 ns/op
+WorkloadPilot    5: 256 op, 3309.00 ns, 12.9258 ns/op
+WorkloadPilot    6: 512 op, 6173.00 ns, 12.0566 ns/op
+WorkloadPilot    7: 1024 op, 11914.00 ns, 11.6348 ns/op
+WorkloadPilot    8: 2048 op, 23577.00 ns, 11.5122 ns/op
+WorkloadPilot    9: 4096 op, 46612.00 ns, 11.3799 ns/op
+WorkloadPilot   10: 8192 op, 92841.00 ns, 11.3331 ns/op
+WorkloadPilot   11: 16384 op, 185410.00 ns, 11.3165 ns/op
+WorkloadPilot   12: 32768 op, 370315.00 ns, 11.3011 ns/op
+WorkloadPilot   13: 65536 op, 740961.00 ns, 11.3062 ns/op
+WorkloadPilot   14: 131072 op, 1482885.00 ns, 11.3135 ns/op
+WorkloadPilot   15: 262144 op, 2965650.00 ns, 11.3131 ns/op
+WorkloadPilot   16: 524288 op, 5914385.00 ns, 11.2808 ns/op
+WorkloadPilot   17: 1048576 op, 11832819.00 ns, 11.2847 ns/op
+WorkloadPilot   18: 2097152 op, 23691029.00 ns, 11.2968 ns/op
+WorkloadPilot   19: 4194304 op, 47297372.00 ns, 11.2766 ns/op
+WorkloadPilot   20: 8388608 op, 94509182.00 ns, 11.2664 ns/op
+WorkloadPilot   21: 16777216 op, 174582653.00 ns, 10.4059 ns/op
+WorkloadPilot   22: 33554432 op, 330707560.00 ns, 9.8559 ns/op
+WorkloadPilot   23: 67108864 op, 661510529.00 ns, 9.8573 ns/op
+
+OverheadWarmup   1: 67108864 op, 91642969.00 ns, 1.3656 ns/op
+OverheadWarmup   2: 67108864 op, 91353917.00 ns, 1.3613 ns/op
+OverheadWarmup   3: 67108864 op, 91258828.00 ns, 1.3599 ns/op
+OverheadWarmup   4: 67108864 op, 91391580.00 ns, 1.3618 ns/op
+OverheadWarmup   5: 67108864 op, 91341924.00 ns, 1.3611 ns/op
+OverheadWarmup   6: 67108864 op, 91498307.00 ns, 1.3634 ns/op
+OverheadWarmup   7: 67108864 op, 91215144.00 ns, 1.3592 ns/op
+
+OverheadActual   1: 67108864 op, 91563302.00 ns, 1.3644 ns/op
+OverheadActual   2: 67108864 op, 91217705.00 ns, 1.3592 ns/op
+OverheadActual   3: 67108864 op, 110580841.00 ns, 1.6478 ns/op
+OverheadActual   4: 67108864 op, 101310427.00 ns, 1.5096 ns/op
+OverheadActual   5: 67108864 op, 91376096.00 ns, 1.3616 ns/op
+OverheadActual   6: 67108864 op, 91186030.00 ns, 1.3588 ns/op
+OverheadActual   7: 67108864 op, 91392512.00 ns, 1.3619 ns/op
+OverheadActual   8: 67108864 op, 91338377.00 ns, 1.3610 ns/op
+OverheadActual   9: 67108864 op, 104093273.00 ns, 1.5511 ns/op
+OverheadActual  10: 67108864 op, 103515240.00 ns, 1.5425 ns/op
+OverheadActual  11: 67108864 op, 91568842.00 ns, 1.3645 ns/op
+OverheadActual  12: 67108864 op, 91708190.00 ns, 1.3666 ns/op
+OverheadActual  13: 67108864 op, 91350823.00 ns, 1.3612 ns/op
+OverheadActual  14: 67108864 op, 101387953.00 ns, 1.5108 ns/op
+OverheadActual  15: 67108864 op, 92750907.00 ns, 1.3821 ns/op
+OverheadActual  16: 67108864 op, 109807724.00 ns, 1.6363 ns/op
+OverheadActual  17: 67108864 op, 104429877.00 ns, 1.5561 ns/op
+OverheadActual  18: 67108864 op, 91552026.00 ns, 1.3642 ns/op
+OverheadActual  19: 67108864 op, 91566475.00 ns, 1.3644 ns/op
+OverheadActual  20: 67108864 op, 91772671.00 ns, 1.3675 ns/op
+
+WorkloadWarmup   1: 67108864 op, 643666455.00 ns, 9.5914 ns/op
+WorkloadWarmup   2: 67108864 op, 644074147.00 ns, 9.5975 ns/op
+WorkloadWarmup   3: 67108864 op, 643412704.00 ns, 9.5876 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 67108864 op, 643019982.00 ns, 9.5817 ns/op
+WorkloadActual   2: 67108864 op, 642683005.00 ns, 9.5767 ns/op
+WorkloadActual   3: 67108864 op, 642592641.00 ns, 9.5754 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 67108864 op, 551381466.00 ns, 8.2162 ns/op
+WorkloadResult   2: 67108864 op, 551044489.00 ns, 8.2112 ns/op
+WorkloadResult   3: 67108864 op, 550954125.00 ns, 8.2099 ns/op
+
+// AfterAll
+// Benchmark Process 26991 has exited with code 0
+
+Mean = 8.2124 ns, StdErr = 0.0019 ns (0.02%); N = 3, StdDev = 0.0034 ns
+Min = 8.2099 ns, Q1 = 8.2099 ns, Median = 8.2112 ns, Q3 = 8.2162 ns, Max = 8.2162 ns
+IQR = 0.0064 ns, LowerFence = 8.2003 ns, UpperFence = 8.2258 ns
+ConfidenceInterval = [8.1512 ns; 8.2737 ns] (CI 99.9%), Margin = 0.0612 ns (0.75% of Mean)
+Skewness = 0.32, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.DecimalDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.DecimalDivide" --job "ShortRun" --benchmarkId 2 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 259862.00 ns, 259.8620 us/op
+WorkloadJitting  1: 1 op, 242047.00 ns, 242.0470 us/op
+
+OverheadJitting  2: 16 op, 224932.00 ns, 14.0582 us/op
+WorkloadJitting  2: 16 op, 265754.00 ns, 16.6096 us/op
+
+WorkloadPilot    1: 16 op, 788.00 ns, 49.2500 ns/op
+WorkloadPilot    2: 32 op, 835.00 ns, 26.0938 ns/op
+WorkloadPilot    3: 64 op, 1140.00 ns, 17.8125 ns/op
+WorkloadPilot    4: 128 op, 1827.00 ns, 14.2734 ns/op
+WorkloadPilot    5: 256 op, 3328.00 ns, 13.0000 ns/op
+WorkloadPilot    6: 512 op, 6300.00 ns, 12.3047 ns/op
+WorkloadPilot    7: 1024 op, 11989.00 ns, 11.7080 ns/op
+WorkloadPilot    8: 2048 op, 23573.00 ns, 11.5103 ns/op
+WorkloadPilot    9: 4096 op, 46686.00 ns, 11.3979 ns/op
+WorkloadPilot   10: 8192 op, 92893.00 ns, 11.3395 ns/op
+WorkloadPilot   11: 16384 op, 216784.00 ns, 13.2314 ns/op
+WorkloadPilot   12: 32768 op, 370345.00 ns, 11.3020 ns/op
+WorkloadPilot   13: 65536 op, 740439.00 ns, 11.2982 ns/op
+WorkloadPilot   14: 131072 op, 1484037.00 ns, 11.3223 ns/op
+WorkloadPilot   15: 262144 op, 2957597.00 ns, 11.2823 ns/op
+WorkloadPilot   16: 524288 op, 5921481.00 ns, 11.2943 ns/op
+WorkloadPilot   17: 1048576 op, 11841115.00 ns, 11.2926 ns/op
+WorkloadPilot   18: 2097152 op, 23756297.00 ns, 11.3279 ns/op
+WorkloadPilot   19: 4194304 op, 47280690.00 ns, 11.2726 ns/op
+WorkloadPilot   20: 8388608 op, 93571428.00 ns, 11.1546 ns/op
+WorkloadPilot   21: 16777216 op, 169550399.00 ns, 10.1060 ns/op
+WorkloadPilot   22: 33554432 op, 324672756.00 ns, 9.6760 ns/op
+WorkloadPilot   23: 67108864 op, 649694889.00 ns, 9.6812 ns/op
+
+OverheadWarmup   1: 67108864 op, 91519097.00 ns, 1.3637 ns/op
+OverheadWarmup   2: 67108864 op, 91501243.00 ns, 1.3635 ns/op
+OverheadWarmup   3: 67108864 op, 91306595.00 ns, 1.3606 ns/op
+OverheadWarmup   4: 67108864 op, 91445185.00 ns, 1.3626 ns/op
+OverheadWarmup   5: 67108864 op, 91646456.00 ns, 1.3656 ns/op
+OverheadWarmup   6: 67108864 op, 91695360.00 ns, 1.3664 ns/op
+OverheadWarmup   7: 67108864 op, 91451002.00 ns, 1.3627 ns/op
+OverheadWarmup   8: 67108864 op, 91216171.00 ns, 1.3592 ns/op
+OverheadWarmup   9: 67108864 op, 91279324.00 ns, 1.3602 ns/op
+OverheadWarmup  10: 67108864 op, 91593903.00 ns, 1.3649 ns/op
+
+OverheadActual   1: 67108864 op, 91377528.00 ns, 1.3616 ns/op
+OverheadActual   2: 67108864 op, 91594878.00 ns, 1.3649 ns/op
+OverheadActual   3: 67108864 op, 91571830.00 ns, 1.3645 ns/op
+OverheadActual   4: 67108864 op, 91441385.00 ns, 1.3626 ns/op
+OverheadActual   5: 67108864 op, 91422608.00 ns, 1.3623 ns/op
+OverheadActual   6: 67108864 op, 91312773.00 ns, 1.3607 ns/op
+OverheadActual   7: 67108864 op, 91439064.00 ns, 1.3625 ns/op
+OverheadActual   8: 67108864 op, 91545816.00 ns, 1.3641 ns/op
+OverheadActual   9: 67108864 op, 91476496.00 ns, 1.3631 ns/op
+OverheadActual  10: 67108864 op, 91597111.00 ns, 1.3649 ns/op
+OverheadActual  11: 67108864 op, 91311971.00 ns, 1.3607 ns/op
+OverheadActual  12: 67108864 op, 91351078.00 ns, 1.3612 ns/op
+OverheadActual  13: 67108864 op, 91344900.00 ns, 1.3611 ns/op
+OverheadActual  14: 67108864 op, 91189799.00 ns, 1.3588 ns/op
+OverheadActual  15: 67108864 op, 91254176.00 ns, 1.3598 ns/op
+
+WorkloadWarmup   1: 67108864 op, 628285923.00 ns, 9.3622 ns/op
+WorkloadWarmup   2: 67108864 op, 628272569.00 ns, 9.3620 ns/op
+WorkloadWarmup   3: 67108864 op, 629284163.00 ns, 9.3771 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 67108864 op, 627328748.00 ns, 9.3479 ns/op
+WorkloadActual   2: 67108864 op, 627292822.00 ns, 9.3474 ns/op
+WorkloadActual   3: 67108864 op, 627225870.00 ns, 9.3464 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 67108864 op, 535906140.00 ns, 7.9856 ns/op
+WorkloadResult   2: 67108864 op, 535870214.00 ns, 7.9851 ns/op
+WorkloadResult   3: 67108864 op, 535803262.00 ns, 7.9841 ns/op
+
+// AfterAll
+// Benchmark Process 27026 has exited with code 0
+
+Mean = 7.9849 ns, StdErr = 0.0004 ns (0.01%); N = 3, StdDev = 0.0008 ns
+Min = 7.9841 ns, Q1 = 7.9841 ns, Median = 7.9851 ns, Q3 = 7.9856 ns, Max = 7.9856 ns
+IQR = 0.0015 ns, LowerFence = 7.9818 ns, UpperFence = 7.9879 ns
+ConfidenceInterval = [7.9707 ns; 7.9991 ns] (CI 99.9%), Margin = 0.0142 ns (0.18% of Mean)
+Skewness = -0.19, Kurtosis = 0.67, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.DoubleAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.DoubleAdd" --job "ShortRun" --benchmarkId 3 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 264917.00 ns, 264.9170 us/op
+WorkloadJitting  1: 1 op, 153221.00 ns, 153.2210 us/op
+
+OverheadJitting  2: 16 op, 477926.00 ns, 29.8704 us/op
+WorkloadJitting  2: 16 op, 479809.00 ns, 29.9881 us/op
+
+WorkloadPilot    1: 16 op, 461.00 ns, 28.8125 ns/op
+WorkloadPilot    2: 32 op, 349.00 ns, 10.9062 ns/op
+WorkloadPilot    3: 64 op, 442.00 ns, 6.9062 ns/op
+WorkloadPilot    4: 128 op, 555.00 ns, 4.3359 ns/op
+WorkloadPilot    5: 256 op, 869.00 ns, 3.3945 ns/op
+WorkloadPilot    6: 512 op, 1465.00 ns, 2.8613 ns/op
+WorkloadPilot    7: 1024 op, 2750.00 ns, 2.6855 ns/op
+WorkloadPilot    8: 2048 op, 5144.00 ns, 2.5117 ns/op
+WorkloadPilot    9: 4096 op, 10005.00 ns, 2.4426 ns/op
+WorkloadPilot   10: 8192 op, 19994.00 ns, 2.4407 ns/op
+WorkloadPilot   11: 16384 op, 39468.00 ns, 2.4089 ns/op
+WorkloadPilot   12: 32768 op, 79030.00 ns, 2.4118 ns/op
+WorkloadPilot   13: 65536 op, 157835.00 ns, 2.4084 ns/op
+WorkloadPilot   14: 131072 op, 315438.00 ns, 2.4066 ns/op
+WorkloadPilot   15: 262144 op, 636085.00 ns, 2.4265 ns/op
+WorkloadPilot   16: 524288 op, 1261855.00 ns, 2.4068 ns/op
+WorkloadPilot   17: 1048576 op, 2815257.00 ns, 2.6848 ns/op
+WorkloadPilot   18: 2097152 op, 5056799.00 ns, 2.4113 ns/op
+WorkloadPilot   19: 4194304 op, 10388862.00 ns, 2.4769 ns/op
+WorkloadPilot   20: 8388608 op, 20509736.00 ns, 2.4450 ns/op
+WorkloadPilot   21: 16777216 op, 40806537.00 ns, 2.4323 ns/op
+WorkloadPilot   22: 33554432 op, 55198326.00 ns, 1.6450 ns/op
+WorkloadPilot   23: 67108864 op, 98473500.00 ns, 1.4674 ns/op
+WorkloadPilot   24: 134217728 op, 193655909.00 ns, 1.4428 ns/op
+WorkloadPilot   25: 268435456 op, 390406190.00 ns, 1.4544 ns/op
+WorkloadPilot   26: 536870912 op, 779013736.00 ns, 1.4510 ns/op
+
+OverheadWarmup   1: 536870912 op, 779647073.00 ns, 1.4522 ns/op
+OverheadWarmup   2: 536870912 op, 783147556.00 ns, 1.4587 ns/op
+OverheadWarmup   3: 536870912 op, 793081464.00 ns, 1.4772 ns/op
+OverheadWarmup   4: 536870912 op, 787540906.00 ns, 1.4669 ns/op
+OverheadWarmup   5: 536870912 op, 789462910.00 ns, 1.4705 ns/op
+OverheadWarmup   6: 536870912 op, 791448450.00 ns, 1.4742 ns/op
+OverheadWarmup   7: 536870912 op, 788238174.00 ns, 1.4682 ns/op
+
+OverheadActual   1: 536870912 op, 788744749.00 ns, 1.4692 ns/op
+OverheadActual   2: 536870912 op, 789968354.00 ns, 1.4714 ns/op
+OverheadActual   3: 536870912 op, 789705698.00 ns, 1.4709 ns/op
+OverheadActual   4: 536870912 op, 785341481.00 ns, 1.4628 ns/op
+OverheadActual   5: 536870912 op, 785129923.00 ns, 1.4624 ns/op
+OverheadActual   6: 536870912 op, 791772659.00 ns, 1.4748 ns/op
+OverheadActual   7: 536870912 op, 788682356.00 ns, 1.4690 ns/op
+OverheadActual   8: 536870912 op, 791238354.00 ns, 1.4738 ns/op
+OverheadActual   9: 536870912 op, 788548869.00 ns, 1.4688 ns/op
+OverheadActual  10: 536870912 op, 787016385.00 ns, 1.4659 ns/op
+OverheadActual  11: 536870912 op, 789298805.00 ns, 1.4702 ns/op
+OverheadActual  12: 536870912 op, 791232927.00 ns, 1.4738 ns/op
+OverheadActual  13: 536870912 op, 785903947.00 ns, 1.4639 ns/op
+OverheadActual  14: 536870912 op, 788850693.00 ns, 1.4693 ns/op
+OverheadActual  15: 536870912 op, 790061157.00 ns, 1.4716 ns/op
+
+WorkloadWarmup   1: 536870912 op, 784445879.00 ns, 1.4611 ns/op
+WorkloadWarmup   2: 536870912 op, 785355019.00 ns, 1.4628 ns/op
+WorkloadWarmup   3: 536870912 op, 785003510.00 ns, 1.4622 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 536870912 op, 788051788.00 ns, 1.4679 ns/op
+WorkloadActual   2: 536870912 op, 785977529.00 ns, 1.4640 ns/op
+WorkloadActual   3: 536870912 op, 786858738.00 ns, 1.4656 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   2: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   3: 536870912 op, 0.00 ns, 0.0000 ns/op
+
+// AfterAll
+// Benchmark Process 27055 has exited with code 0
+
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.DoubleMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.DoubleMultiply" --job "ShortRun" --benchmarkId 4 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 261694.00 ns, 261.6940 us/op
+WorkloadJitting  1: 1 op, 148448.00 ns, 148.4480 us/op
+
+OverheadJitting  2: 16 op, 474373.00 ns, 29.6483 us/op
+WorkloadJitting  2: 16 op, 473695.00 ns, 29.6059 us/op
+
+WorkloadPilot    1: 16 op, 442.00 ns, 27.6250 ns/op
+WorkloadPilot    2: 32 op, 342.00 ns, 10.6875 ns/op
+WorkloadPilot    3: 64 op, 389.00 ns, 6.0781 ns/op
+WorkloadPilot    4: 128 op, 491.00 ns, 3.8359 ns/op
+WorkloadPilot    5: 256 op, 685.00 ns, 2.6758 ns/op
+WorkloadPilot    6: 512 op, 1159.00 ns, 2.2637 ns/op
+WorkloadPilot    7: 1024 op, 2066.00 ns, 2.0176 ns/op
+WorkloadPilot    8: 2048 op, 3873.00 ns, 1.8911 ns/op
+WorkloadPilot    9: 4096 op, 7436.00 ns, 1.8154 ns/op
+WorkloadPilot   10: 8192 op, 14735.00 ns, 1.7987 ns/op
+WorkloadPilot   11: 16384 op, 29172.00 ns, 1.7805 ns/op
+WorkloadPilot   12: 32768 op, 58131.00 ns, 1.7740 ns/op
+WorkloadPilot   13: 65536 op, 116055.00 ns, 1.7709 ns/op
+WorkloadPilot   14: 131072 op, 231850.00 ns, 1.7689 ns/op
+WorkloadPilot   15: 262144 op, 463425.00 ns, 1.7678 ns/op
+WorkloadPilot   16: 524288 op, 926589.00 ns, 1.7673 ns/op
+WorkloadPilot   17: 1048576 op, 1852849.00 ns, 1.7670 ns/op
+WorkloadPilot   18: 2097152 op, 3710611.00 ns, 1.7694 ns/op
+WorkloadPilot   19: 4194304 op, 7426629.00 ns, 1.7706 ns/op
+WorkloadPilot   20: 8388608 op, 14876482.00 ns, 1.7734 ns/op
+WorkloadPilot   21: 16777216 op, 30260032.00 ns, 1.8036 ns/op
+WorkloadPilot   22: 33554432 op, 66728235.00 ns, 1.9887 ns/op
+WorkloadPilot   23: 67108864 op, 112307215.00 ns, 1.6735 ns/op
+WorkloadPilot   24: 134217728 op, 205586513.00 ns, 1.5317 ns/op
+WorkloadPilot   25: 268435456 op, 388576592.00 ns, 1.4476 ns/op
+WorkloadPilot   26: 536870912 op, 778333183.00 ns, 1.4498 ns/op
+
+OverheadWarmup   1: 536870912 op, 782351298.00 ns, 1.4572 ns/op
+OverheadWarmup   2: 536870912 op, 780996458.00 ns, 1.4547 ns/op
+OverheadWarmup   3: 536870912 op, 785469702.00 ns, 1.4631 ns/op
+OverheadWarmup   4: 536870912 op, 784636659.00 ns, 1.4615 ns/op
+OverheadWarmup   5: 536870912 op, 782749080.00 ns, 1.4580 ns/op
+OverheadWarmup   6: 536870912 op, 783739347.00 ns, 1.4598 ns/op
+OverheadWarmup   7: 536870912 op, 786287249.00 ns, 1.4646 ns/op
+OverheadWarmup   8: 536870912 op, 785527189.00 ns, 1.4632 ns/op
+
+OverheadActual   1: 536870912 op, 785287872.00 ns, 1.4627 ns/op
+OverheadActual   2: 536870912 op, 783819098.00 ns, 1.4600 ns/op
+OverheadActual   3: 536870912 op, 790461130.00 ns, 1.4723 ns/op
+OverheadActual   4: 536870912 op, 785863360.00 ns, 1.4638 ns/op
+OverheadActual   5: 536870912 op, 785232674.00 ns, 1.4626 ns/op
+OverheadActual   6: 536870912 op, 785243631.00 ns, 1.4626 ns/op
+OverheadActual   7: 536870912 op, 785488065.00 ns, 1.4631 ns/op
+OverheadActual   8: 536870912 op, 784545248.00 ns, 1.4613 ns/op
+OverheadActual   9: 536870912 op, 784740142.00 ns, 1.4617 ns/op
+OverheadActual  10: 536870912 op, 784935125.00 ns, 1.4621 ns/op
+OverheadActual  11: 536870912 op, 784594254.00 ns, 1.4614 ns/op
+OverheadActual  12: 536870912 op, 786123913.00 ns, 1.4643 ns/op
+OverheadActual  13: 536870912 op, 786962094.00 ns, 1.4658 ns/op
+OverheadActual  14: 536870912 op, 783303102.00 ns, 1.4590 ns/op
+OverheadActual  15: 536870912 op, 781897212.00 ns, 1.4564 ns/op
+
+WorkloadWarmup   1: 536870912 op, 776139617.00 ns, 1.4457 ns/op
+WorkloadWarmup   2: 536870912 op, 775090520.00 ns, 1.4437 ns/op
+WorkloadWarmup   3: 536870912 op, 775293202.00 ns, 1.4441 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 536870912 op, 775951106.00 ns, 1.4453 ns/op
+WorkloadActual   2: 536870912 op, 777044441.00 ns, 1.4474 ns/op
+WorkloadActual   3: 536870912 op, 774018577.00 ns, 1.4417 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   2: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   3: 536870912 op, 0.00 ns, 0.0000 ns/op
+
+// AfterAll
+// Benchmark Process 27123 has exited with code 0
+
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.DoubleDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.DoubleDivide" --job "ShortRun" --benchmarkId 5 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 255771.00 ns, 255.7710 us/op
+WorkloadJitting  1: 1 op, 144964.00 ns, 144.9640 us/op
+
+OverheadJitting  2: 16 op, 479935.00 ns, 29.9959 us/op
+WorkloadJitting  2: 16 op, 468803.00 ns, 29.3002 us/op
+
+WorkloadPilot    1: 16 op, 381.00 ns, 23.8125 ns/op
+WorkloadPilot    2: 32 op, 330.00 ns, 10.3125 ns/op
+WorkloadPilot    3: 64 op, 389.00 ns, 6.0781 ns/op
+WorkloadPilot    4: 128 op, 504.00 ns, 3.9375 ns/op
+WorkloadPilot    5: 256 op, 1436.00 ns, 5.6094 ns/op
+WorkloadPilot    6: 512 op, 1234.00 ns, 2.4102 ns/op
+WorkloadPilot    7: 1024 op, 2214.00 ns, 2.1621 ns/op
+WorkloadPilot    8: 2048 op, 4128.00 ns, 2.0156 ns/op
+WorkloadPilot    9: 4096 op, 8048.00 ns, 1.9648 ns/op
+WorkloadPilot   10: 8192 op, 15820.00 ns, 1.9312 ns/op
+WorkloadPilot   11: 16384 op, 31369.00 ns, 1.9146 ns/op
+WorkloadPilot   12: 32768 op, 62489.00 ns, 1.9070 ns/op
+WorkloadPilot   13: 65536 op, 124678.00 ns, 1.9024 ns/op
+WorkloadPilot   14: 131072 op, 249158.00 ns, 1.9009 ns/op
+WorkloadPilot   15: 262144 op, 498009.00 ns, 1.8998 ns/op
+WorkloadPilot   16: 524288 op, 1018358.00 ns, 1.9424 ns/op
+WorkloadPilot   17: 1048576 op, 1997455.00 ns, 1.9049 ns/op
+WorkloadPilot   18: 2097152 op, 3995505.00 ns, 1.9052 ns/op
+WorkloadPilot   19: 4194304 op, 8054507.00 ns, 1.9203 ns/op
+WorkloadPilot   20: 8388608 op, 15632202.00 ns, 1.8635 ns/op
+WorkloadPilot   21: 16777216 op, 31231453.00 ns, 1.8615 ns/op
+WorkloadPilot   22: 33554432 op, 55806673.00 ns, 1.6632 ns/op
+WorkloadPilot   23: 67108864 op, 97222436.00 ns, 1.4487 ns/op
+WorkloadPilot   24: 134217728 op, 193496935.00 ns, 1.4417 ns/op
+WorkloadPilot   25: 268435456 op, 387992071.00 ns, 1.4454 ns/op
+WorkloadPilot   26: 536870912 op, 776242525.00 ns, 1.4459 ns/op
+
+OverheadWarmup   1: 536870912 op, 783123011.00 ns, 1.4587 ns/op
+OverheadWarmup   2: 536870912 op, 786516492.00 ns, 1.4650 ns/op
+OverheadWarmup   3: 536870912 op, 787391474.00 ns, 1.4666 ns/op
+OverheadWarmup   4: 536870912 op, 783124899.00 ns, 1.4587 ns/op
+OverheadWarmup   5: 536870912 op, 783362367.00 ns, 1.4591 ns/op
+OverheadWarmup   6: 536870912 op, 782353807.00 ns, 1.4572 ns/op
+
+OverheadActual   1: 536870912 op, 783958718.00 ns, 1.4602 ns/op
+OverheadActual   2: 536870912 op, 782663415.00 ns, 1.4578 ns/op
+OverheadActual   3: 536870912 op, 781685372.00 ns, 1.4560 ns/op
+OverheadActual   4: 536870912 op, 781575588.00 ns, 1.4558 ns/op
+OverheadActual   5: 536870912 op, 782873587.00 ns, 1.4582 ns/op
+OverheadActual   6: 536870912 op, 785349533.00 ns, 1.4628 ns/op
+OverheadActual   7: 536870912 op, 782447551.00 ns, 1.4574 ns/op
+OverheadActual   8: 536870912 op, 782664526.00 ns, 1.4578 ns/op
+OverheadActual   9: 536870912 op, 781988449.00 ns, 1.4566 ns/op
+OverheadActual  10: 536870912 op, 782450212.00 ns, 1.4574 ns/op
+OverheadActual  11: 536870912 op, 783948689.00 ns, 1.4602 ns/op
+OverheadActual  12: 536870912 op, 790417760.00 ns, 1.4723 ns/op
+OverheadActual  13: 536870912 op, 784183207.00 ns, 1.4607 ns/op
+OverheadActual  14: 536870912 op, 783868136.00 ns, 1.4601 ns/op
+OverheadActual  15: 536870912 op, 783164152.00 ns, 1.4588 ns/op
+
+WorkloadWarmup   1: 536870912 op, 773815630.00 ns, 1.4413 ns/op
+WorkloadWarmup   2: 536870912 op, 775010984.00 ns, 1.4436 ns/op
+WorkloadWarmup   3: 536870912 op, 774714200.00 ns, 1.4430 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 536870912 op, 776378521.00 ns, 1.4461 ns/op
+WorkloadActual   2: 536870912 op, 775483359.00 ns, 1.4445 ns/op
+WorkloadActual   3: 536870912 op, 773991182.00 ns, 1.4417 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   2: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   3: 536870912 op, 0.00 ns, 0.0000 ns/op
+
+// AfterAll
+// Benchmark Process 27202 has exited with code 0
+
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.SingleAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.SingleAdd" --job "ShortRun" --benchmarkId 6 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 249121.00 ns, 249.1210 us/op
+WorkloadJitting  1: 1 op, 146854.00 ns, 146.8540 us/op
+
+OverheadJitting  2: 16 op, 466054.00 ns, 29.1284 us/op
+WorkloadJitting  2: 16 op, 468552.00 ns, 29.2845 us/op
+
+WorkloadPilot    1: 16 op, 419.00 ns, 26.1875 ns/op
+WorkloadPilot    2: 32 op, 359.00 ns, 11.2188 ns/op
+WorkloadPilot    3: 64 op, 422.00 ns, 6.5938 ns/op
+WorkloadPilot    4: 128 op, 501.00 ns, 3.9141 ns/op
+WorkloadPilot    5: 256 op, 809.00 ns, 3.1602 ns/op
+WorkloadPilot    6: 512 op, 1141.00 ns, 2.2285 ns/op
+WorkloadPilot    7: 1024 op, 2038.00 ns, 1.9902 ns/op
+WorkloadPilot    8: 2048 op, 3865.00 ns, 1.8872 ns/op
+WorkloadPilot    9: 4096 op, 7469.00 ns, 1.8235 ns/op
+WorkloadPilot   10: 8192 op, 14704.00 ns, 1.7949 ns/op
+WorkloadPilot   11: 16384 op, 29180.00 ns, 1.7810 ns/op
+WorkloadPilot   12: 32768 op, 58086.00 ns, 1.7726 ns/op
+WorkloadPilot   13: 65536 op, 116046.00 ns, 1.7707 ns/op
+WorkloadPilot   14: 131072 op, 231793.00 ns, 1.7684 ns/op
+WorkloadPilot   15: 262144 op, 463357.00 ns, 1.7676 ns/op
+WorkloadPilot   16: 524288 op, 931718.00 ns, 1.7771 ns/op
+WorkloadPilot   17: 1048576 op, 1852668.00 ns, 1.7668 ns/op
+WorkloadPilot   18: 2097152 op, 3724400.00 ns, 1.7759 ns/op
+WorkloadPilot   19: 4194304 op, 7422555.00 ns, 1.7697 ns/op
+WorkloadPilot   20: 8388608 op, 14869166.00 ns, 1.7725 ns/op
+WorkloadPilot   21: 16777216 op, 29674773.00 ns, 1.7688 ns/op
+WorkloadPilot   22: 33554432 op, 55539868.00 ns, 1.6552 ns/op
+WorkloadPilot   23: 67108864 op, 94883636.00 ns, 1.4139 ns/op
+WorkloadPilot   24: 134217728 op, 189942953.00 ns, 1.4152 ns/op
+WorkloadPilot   25: 268435456 op, 379869568.00 ns, 1.4151 ns/op
+WorkloadPilot   26: 536870912 op, 762638738.00 ns, 1.4205 ns/op
+
+OverheadWarmup   1: 536870912 op, 779067221.00 ns, 1.4511 ns/op
+OverheadWarmup   2: 536870912 op, 781135214.00 ns, 1.4550 ns/op
+OverheadWarmup   3: 536870912 op, 779276949.00 ns, 1.4515 ns/op
+OverheadWarmup   4: 536870912 op, 780814775.00 ns, 1.4544 ns/op
+OverheadWarmup   5: 536870912 op, 779741837.00 ns, 1.4524 ns/op
+
+OverheadActual   1: 536870912 op, 781329437.00 ns, 1.4553 ns/op
+OverheadActual   2: 536870912 op, 782964670.00 ns, 1.4584 ns/op
+OverheadActual   3: 536870912 op, 784767399.00 ns, 1.4617 ns/op
+OverheadActual   4: 536870912 op, 782704216.00 ns, 1.4579 ns/op
+OverheadActual   5: 536870912 op, 781175471.00 ns, 1.4551 ns/op
+OverheadActual   6: 536870912 op, 783036524.00 ns, 1.4585 ns/op
+OverheadActual   7: 536870912 op, 782162138.00 ns, 1.4569 ns/op
+OverheadActual   8: 536870912 op, 783021867.00 ns, 1.4585 ns/op
+OverheadActual   9: 536870912 op, 781383902.00 ns, 1.4554 ns/op
+OverheadActual  10: 536870912 op, 796973740.00 ns, 1.4845 ns/op
+OverheadActual  11: 536870912 op, 780401875.00 ns, 1.4536 ns/op
+OverheadActual  12: 536870912 op, 781801180.00 ns, 1.4562 ns/op
+OverheadActual  13: 536870912 op, 782894269.00 ns, 1.4583 ns/op
+OverheadActual  14: 536870912 op, 781095582.00 ns, 1.4549 ns/op
+OverheadActual  15: 536870912 op, 782622683.00 ns, 1.4577 ns/op
+
+WorkloadWarmup   1: 536870912 op, 763159565.00 ns, 1.4215 ns/op
+WorkloadWarmup   2: 536870912 op, 761797324.00 ns, 1.4190 ns/op
+WorkloadWarmup   3: 536870912 op, 763595405.00 ns, 1.4223 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 536870912 op, 762358193.00 ns, 1.4200 ns/op
+WorkloadActual   2: 536870912 op, 762873290.00 ns, 1.4210 ns/op
+WorkloadActual   3: 536870912 op, 760542966.00 ns, 1.4166 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   2: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   3: 536870912 op, 0.00 ns, 0.0000 ns/op
+
+// AfterAll
+// Benchmark Process 27270 has exited with code 0
+
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.SingleMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.SingleMultiply" --job "ShortRun" --benchmarkId 7 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 270096.00 ns, 270.0960 us/op
+WorkloadJitting  1: 1 op, 146655.00 ns, 146.6550 us/op
+
+OverheadJitting  2: 16 op, 523823.00 ns, 32.7389 us/op
+WorkloadJitting  2: 16 op, 461736.00 ns, 28.8585 us/op
+
+WorkloadPilot    1: 16 op, 435.00 ns, 27.1875 ns/op
+WorkloadPilot    2: 32 op, 386.00 ns, 12.0625 ns/op
+WorkloadPilot    3: 64 op, 400.00 ns, 6.2500 ns/op
+WorkloadPilot    4: 128 op, 531.00 ns, 4.1484 ns/op
+WorkloadPilot    5: 256 op, 745.00 ns, 2.9102 ns/op
+WorkloadPilot    6: 512 op, 1201.00 ns, 2.3457 ns/op
+WorkloadPilot    7: 1024 op, 2090.00 ns, 2.0410 ns/op
+WorkloadPilot    8: 2048 op, 3911.00 ns, 1.9097 ns/op
+WorkloadPilot    9: 4096 op, 7550.00 ns, 1.8433 ns/op
+WorkloadPilot   10: 8192 op, 14809.00 ns, 1.8077 ns/op
+WorkloadPilot   11: 16384 op, 29311.00 ns, 1.7890 ns/op
+WorkloadPilot   12: 32768 op, 58291.00 ns, 1.7789 ns/op
+WorkloadPilot   13: 65536 op, 120941.00 ns, 1.8454 ns/op
+WorkloadPilot   14: 131072 op, 672433.00 ns, 5.1303 ns/op
+WorkloadPilot   15: 262144 op, 463593.00 ns, 1.7685 ns/op
+WorkloadPilot   16: 524288 op, 926853.00 ns, 1.7678 ns/op
+WorkloadPilot   17: 1048576 op, 1977311.00 ns, 1.8857 ns/op
+WorkloadPilot   18: 2097152 op, 3767347.00 ns, 1.7964 ns/op
+WorkloadPilot   19: 4194304 op, 7931986.00 ns, 1.8911 ns/op
+WorkloadPilot   20: 8388608 op, 15073368.00 ns, 1.7969 ns/op
+WorkloadPilot   21: 16777216 op, 30145958.00 ns, 1.7968 ns/op
+WorkloadPilot   22: 33554432 op, 59230513.00 ns, 1.7652 ns/op
+WorkloadPilot   23: 67108864 op, 108153331.00 ns, 1.6116 ns/op
+WorkloadPilot   24: 134217728 op, 190699147.00 ns, 1.4208 ns/op
+WorkloadPilot   25: 268435456 op, 387717482.00 ns, 1.4444 ns/op
+WorkloadPilot   26: 536870912 op, 764327743.00 ns, 1.4237 ns/op
+
+OverheadWarmup   1: 536870912 op, 781459465.00 ns, 1.4556 ns/op
+OverheadWarmup   2: 536870912 op, 785001861.00 ns, 1.4622 ns/op
+OverheadWarmup   3: 536870912 op, 783932337.00 ns, 1.4602 ns/op
+OverheadWarmup   4: 536870912 op, 783121637.00 ns, 1.4587 ns/op
+OverheadWarmup   5: 536870912 op, 782843940.00 ns, 1.4582 ns/op
+OverheadWarmup   6: 536870912 op, 779481868.00 ns, 1.4519 ns/op
+OverheadWarmup   7: 536870912 op, 782797147.00 ns, 1.4581 ns/op
+OverheadWarmup   8: 536870912 op, 780954263.00 ns, 1.4546 ns/op
+
+OverheadActual   1: 536870912 op, 781376078.00 ns, 1.4554 ns/op
+OverheadActual   2: 536870912 op, 782790224.00 ns, 1.4581 ns/op
+OverheadActual   3: 536870912 op, 786346758.00 ns, 1.4647 ns/op
+OverheadActual   4: 536870912 op, 784730561.00 ns, 1.4617 ns/op
+OverheadActual   5: 536870912 op, 783310207.00 ns, 1.4590 ns/op
+OverheadActual   6: 536870912 op, 782656362.00 ns, 1.4578 ns/op
+OverheadActual   7: 536870912 op, 782990662.00 ns, 1.4584 ns/op
+OverheadActual   8: 536870912 op, 781306194.00 ns, 1.4553 ns/op
+OverheadActual   9: 536870912 op, 782200978.00 ns, 1.4570 ns/op
+OverheadActual  10: 536870912 op, 783687623.00 ns, 1.4597 ns/op
+OverheadActual  11: 536870912 op, 781377590.00 ns, 1.4554 ns/op
+OverheadActual  12: 536870912 op, 780191444.00 ns, 1.4532 ns/op
+OverheadActual  13: 536870912 op, 780646344.00 ns, 1.4541 ns/op
+OverheadActual  14: 536870912 op, 780990788.00 ns, 1.4547 ns/op
+OverheadActual  15: 536870912 op, 783046123.00 ns, 1.4585 ns/op
+
+WorkloadWarmup   1: 536870912 op, 761943080.00 ns, 1.4192 ns/op
+WorkloadWarmup   2: 536870912 op, 762604647.00 ns, 1.4205 ns/op
+WorkloadWarmup   3: 536870912 op, 763801642.00 ns, 1.4227 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 536870912 op, 761034672.00 ns, 1.4175 ns/op
+WorkloadActual   2: 536870912 op, 762641961.00 ns, 1.4205 ns/op
+WorkloadActual   3: 536870912 op, 761072521.00 ns, 1.4176 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   2: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   3: 536870912 op, 0.00 ns, 0.0000 ns/op
+
+// AfterAll
+// Benchmark Process 27335 has exited with code 0
+
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// **************************
+// Benchmark: FractionalTypes.SingleDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "ca279f2b-44c4-4971-ad5b-5a63ca75728e.dll" --benchmarkName "BenchmarkDecimal.FractionalTypes.SingleDivide" --job "ShortRun" --benchmarkId 8 in /home/csharpfritz/dev/csharp-workshop/DecimalBenchmark/Release/netcoreapp3.0/ca279f2b-44c4-4971-ad5b-5a63ca75728e/bin/Release/netcoreapp3.1
+Failed to set up high priority. Make sure you have the right permissions. Message: Permission denied
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+
+OverheadJitting  1: 1 op, 291120.00 ns, 291.1200 us/op
+WorkloadJitting  1: 1 op, 168412.00 ns, 168.4120 us/op
+
+OverheadJitting  2: 16 op, 551423.00 ns, 34.4639 us/op
+WorkloadJitting  2: 16 op, 539415.00 ns, 33.7134 us/op
+
+WorkloadPilot    1: 16 op, 494.00 ns, 30.8750 ns/op
+WorkloadPilot    2: 32 op, 422.00 ns, 13.1875 ns/op
+WorkloadPilot    3: 64 op, 482.00 ns, 7.5312 ns/op
+WorkloadPilot    4: 128 op, 636.00 ns, 4.9688 ns/op
+WorkloadPilot    5: 256 op, 867.00 ns, 3.3867 ns/op
+WorkloadPilot    6: 512 op, 1458.00 ns, 2.8477 ns/op
+WorkloadPilot    7: 1024 op, 2607.00 ns, 2.5459 ns/op
+WorkloadPilot    8: 2048 op, 4836.00 ns, 2.3613 ns/op
+WorkloadPilot    9: 4096 op, 9391.00 ns, 2.2927 ns/op
+WorkloadPilot   10: 8192 op, 18446.00 ns, 2.2517 ns/op
+WorkloadPilot   11: 16384 op, 36606.00 ns, 2.2343 ns/op
+WorkloadPilot   12: 32768 op, 72872.00 ns, 2.2239 ns/op
+WorkloadPilot   13: 65536 op, 145469.00 ns, 2.2197 ns/op
+WorkloadPilot   14: 131072 op, 290766.00 ns, 2.2184 ns/op
+WorkloadPilot   15: 262144 op, 1004818.00 ns, 3.8331 ns/op
+WorkloadPilot   16: 524288 op, 1167232.00 ns, 2.2263 ns/op
+WorkloadPilot   17: 1048576 op, 2324680.00 ns, 2.2170 ns/op
+WorkloadPilot   18: 2097152 op, 4657957.00 ns, 2.2211 ns/op
+WorkloadPilot   19: 4194304 op, 9300730.00 ns, 2.2175 ns/op
+WorkloadPilot   20: 8388608 op, 18622311.00 ns, 2.2200 ns/op
+WorkloadPilot   21: 16777216 op, 37156594.00 ns, 2.2147 ns/op
+WorkloadPilot   22: 33554432 op, 70553767.00 ns, 2.1027 ns/op
+WorkloadPilot   23: 67108864 op, 128845229.00 ns, 1.9199 ns/op
+WorkloadPilot   24: 134217728 op, 192357692.00 ns, 1.4332 ns/op
+WorkloadPilot   25: 268435456 op, 381336673.00 ns, 1.4206 ns/op
+WorkloadPilot   26: 536870912 op, 765552458.00 ns, 1.4260 ns/op
+
+OverheadWarmup   1: 536870912 op, 782127214.00 ns, 1.4568 ns/op
+OverheadWarmup   2: 536870912 op, 784946435.00 ns, 1.4621 ns/op
+OverheadWarmup   3: 536870912 op, 785082210.00 ns, 1.4623 ns/op
+OverheadWarmup   4: 536870912 op, 785225830.00 ns, 1.4626 ns/op
+OverheadWarmup   5: 536870912 op, 787205641.00 ns, 1.4663 ns/op
+OverheadWarmup   6: 536870912 op, 794556946.00 ns, 1.4800 ns/op
+OverheadWarmup   7: 536870912 op, 787388305.00 ns, 1.4666 ns/op
+OverheadWarmup   8: 536870912 op, 784926101.00 ns, 1.4620 ns/op
+OverheadWarmup   9: 536870912 op, 784151747.00 ns, 1.4606 ns/op
+OverheadWarmup  10: 536870912 op, 787081407.00 ns, 1.4661 ns/op
+
+OverheadActual   1: 536870912 op, 841501776.00 ns, 1.5674 ns/op
+OverheadActual   2: 536870912 op, 888051105.00 ns, 1.6541 ns/op
+OverheadActual   3: 536870912 op, 778553428.00 ns, 1.4502 ns/op
+OverheadActual   4: 536870912 op, 784652044.00 ns, 1.4615 ns/op
+OverheadActual   5: 536870912 op, 789148879.00 ns, 1.4699 ns/op
+OverheadActual   6: 536870912 op, 785660820.00 ns, 1.4634 ns/op
+OverheadActual   7: 536870912 op, 786623535.00 ns, 1.4652 ns/op
+OverheadActual   8: 536870912 op, 786109900.00 ns, 1.4642 ns/op
+OverheadActual   9: 536870912 op, 786340679.00 ns, 1.4647 ns/op
+OverheadActual  10: 536870912 op, 788047861.00 ns, 1.4679 ns/op
+OverheadActual  11: 536870912 op, 792718786.00 ns, 1.4766 ns/op
+OverheadActual  12: 536870912 op, 785821556.00 ns, 1.4637 ns/op
+OverheadActual  13: 536870912 op, 787099183.00 ns, 1.4661 ns/op
+OverheadActual  14: 536870912 op, 785790052.00 ns, 1.4636 ns/op
+OverheadActual  15: 536870912 op, 786018894.00 ns, 1.4641 ns/op
+
+WorkloadWarmup   1: 536870912 op, 764211384.00 ns, 1.4235 ns/op
+WorkloadWarmup   2: 536870912 op, 761905483.00 ns, 1.4192 ns/op
+WorkloadWarmup   3: 536870912 op, 759066349.00 ns, 1.4139 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 536870912 op, 764752974.00 ns, 1.4245 ns/op
+WorkloadActual   2: 536870912 op, 762173979.00 ns, 1.4197 ns/op
+WorkloadActual   3: 536870912 op, 763594915.00 ns, 1.4223 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   2: 536870912 op, 0.00 ns, 0.0000 ns/op
+WorkloadResult   3: 536870912 op, 0.00 ns, 0.0000 ns/op
+
+// AfterAll
+// Benchmark Process 27400 has exited with code 0
+
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/BenchmarkDecimal.FractionalTypes-report.csv
+  BenchmarkDotNet.Artifacts/results/BenchmarkDecimal.FractionalTypes-report-github.md
+  BenchmarkDotNet.Artifacts/results/BenchmarkDecimal.FractionalTypes-report.html
+  BenchmarkDotNet.Artifacts/results/BenchmarkDecimal.FractionalTypes-report.csv
+
+// * Detailed results *
+FractionalTypes.DecimalAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 8.2118 ns, StdErr = 0.0012 ns (0.01%); N = 3, StdDev = 0.0021 ns
+Min = 8.2102 ns, Q1 = 8.2102 ns, Median = 8.2111 ns, Q3 = 8.2141 ns, Max = 8.2141 ns
+IQR = 0.0040 ns, LowerFence = 8.2042 ns, UpperFence = 8.2201 ns
+ConfidenceInterval = [8.1737 ns; 8.2499 ns] (CI 99.9%), Margin = 0.0381 ns (0.46% of Mean)
+Skewness = 0.31, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[8.209 ns ; 8.216 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.DecimalMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 8.2124 ns, StdErr = 0.0019 ns (0.02%); N = 3, StdDev = 0.0034 ns
+Min = 8.2099 ns, Q1 = 8.2099 ns, Median = 8.2112 ns, Q3 = 8.2162 ns, Max = 8.2162 ns
+IQR = 0.0064 ns, LowerFence = 8.2003 ns, UpperFence = 8.2258 ns
+ConfidenceInterval = [8.1512 ns; 8.2737 ns] (CI 99.9%), Margin = 0.0612 ns (0.75% of Mean)
+Skewness = 0.32, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[8.208 ns ; 8.218 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.DecimalDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 7.9849 ns, StdErr = 0.0004 ns (0.01%); N = 3, StdDev = 0.0008 ns
+Min = 7.9841 ns, Q1 = 7.9841 ns, Median = 7.9851 ns, Q3 = 7.9856 ns, Max = 7.9856 ns
+IQR = 0.0015 ns, LowerFence = 7.9818 ns, UpperFence = 7.9879 ns
+ConfidenceInterval = [7.9707 ns; 7.9991 ns] (CI 99.9%), Margin = 0.0142 ns (0.18% of Mean)
+Skewness = -0.19, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[7.984 ns ; 7.986 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.DoubleAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[-0.500 ns ; 0.500 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.DoubleMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[-0.500 ns ; 0.500 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.DoubleDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[-0.500 ns ; 0.500 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.SingleAdd: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[-0.500 ns ; 0.500 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.SingleMultiply: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[-0.500 ns ; 0.500 ns) | @@@
+---------------------------------------------------
+
+FractionalTypes.SingleDivide: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=3)
+Runtime = .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 0.0000 ns, StdErr = 0.0000 ns (NaN%); N = 3, StdDev = 0.0000 ns
+Min = 0.0000 ns, Q1 = 0.0000 ns, Median = 0.0000 ns, Q3 = 0.0000 ns, Max = 0.0000 ns
+IQR = 0.0000 ns, LowerFence = 0.0000 ns, UpperFence = 0.0000 ns
+ConfidenceInterval = [0.0000 ns; 0.0000 ns] (CI 99.9%), Margin = 0.0000 ns (NaN% of Mean)
+Skewness = NaN, Kurtosis = NaN, MValue = 2
+-------------------- Histogram --------------------
+[-0.500 ns ; 0.500 ns) | @@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.0, OS=ubuntu 20.04
+Intel Core i7-10875H CPU 2.30GHz, 1 CPU, 16 logical and 8 physical cores
+.NET Core SDK=6.0.100-preview.4.21255.9
+  [Host]   : .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+  ShortRun : .NET Core 3.1.16 (CoreCLR 4.700.21.26205, CoreFX 4.700.21.26205), X64 RyuJIT
+
+Job=ShortRun  IterationCount=3  LaunchCount=1  
+WarmupCount=3  
+
+|          Method |      Mean |     Error |    StdDev |
+|---------------- |----------:|----------:|----------:|
+|      DecimalAdd | 8.2118 ns | 0.0381 ns | 0.0021 ns |
+| DecimalMultiply | 8.2124 ns | 0.0612 ns | 0.0034 ns |
+|   DecimalDivide | 7.9849 ns | 0.0142 ns | 0.0008 ns |
+|       DoubleAdd | 0.0000 ns | 0.0000 ns | 0.0000 ns |
+|  DoubleMultiply | 0.0000 ns | 0.0000 ns | 0.0000 ns |
+|    DoubleDivide | 0.0000 ns | 0.0000 ns | 0.0000 ns |
+|       SingleAdd | 0.0000 ns | 0.0000 ns | 0.0000 ns |
+|  SingleMultiply | 0.0000 ns | 0.0000 ns | 0.0000 ns |
+|    SingleDivide | 0.0000 ns | 0.0000 ns | 0.0000 ns |
+
+// * Warnings *
+ZeroMeasurement
+  FractionalTypes.DoubleAdd: ShortRun      -> The method duration is indistinguishable from the empty method duration
+  FractionalTypes.DoubleMultiply: ShortRun -> The method duration is indistinguishable from the empty method duration
+  FractionalTypes.DoubleDivide: ShortRun   -> The method duration is indistinguishable from the empty method duration
+  FractionalTypes.SingleAdd: ShortRun      -> The method duration is indistinguishable from the empty method duration
+  FractionalTypes.SingleMultiply: ShortRun -> The method duration is indistinguishable from the empty method duration
+  FractionalTypes.SingleDivide: ShortRun   -> The method duration is indistinguishable from the empty method duration
+
+// * Legends *
+  Mean   : Arithmetic mean of all measurements
+  Error  : Half of 99.9% confidence interval
+  StdDev : Standard deviation of all measurements
+  1 ns   : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:02:46 (166.93 sec), executed benchmarks: 9
+
+Global total time: 00:02:49 (169.39 sec), executed benchmarks: 9
+// * Artifacts cleanup *

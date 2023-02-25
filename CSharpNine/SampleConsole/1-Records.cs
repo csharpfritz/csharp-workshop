@@ -14,10 +14,10 @@ namespace SampleConsole
 			//Demo1();
 
 			// Inheritance with records
-			// Demo2();
+			//Demo2();
 
 			// Deconstruction and Cloning
-			//Demo3();
+			Demo3();
 
 		}
 
@@ -37,7 +37,8 @@ namespace SampleConsole
 
 			// second record equals first
 			var s = new Person("jeff", "fritz");
-			WriteLine( p == s);
+			//WriteLine( p == s);
+			WriteLine(s.ToString());
 
 		}
 
@@ -75,13 +76,14 @@ namespace SampleConsole
 
 			// Records support inheritance
 
-			// var p = new CoolPerson("jeff", "fritz");
-			// WriteLine(p);
+			var p = new CoolPerson("jeff", "fritz");
+			WriteLine(p);
 
 			var r = new Rockstar("Freddie", "Mercury", "Queen");
-			// WriteLine(r);
+			WriteLine(r);
 
-			WriteLine(r as CoolPerson);
+			var fm = r as CoolPerson;
+			WriteLine(fm);
 
 		}
 
@@ -101,6 +103,7 @@ namespace SampleConsole
 			WriteLine($"First: {first} Last: {last}");
 
 			// Clone using the WITH expression
+			// p.FirstName = "Bob";
 			var s = p with { FirstName="scott" };
 			WriteLine(s);
 			WriteLine(p);

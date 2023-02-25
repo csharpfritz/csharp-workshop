@@ -10,13 +10,13 @@ namespace SampleConsole
 		{
 
 			var pm = new PatternMatching();
-			// pm.Basics();
+			pm.Basics();
 			// pm.BasicSwitch();
 			// pm.PropertyPattern();
 			// WriteLine(pm.RockPaperScissors("rock", "paper"));
 			//  pm.NineSimplePattern();
 			// pm.NineRelationalPatterns();
-			pm.NineLogicalPatterns();
+			//pm.NineLogicalPatterns();
 
 		}
 
@@ -24,7 +24,7 @@ namespace SampleConsole
 		{
 
 			// Match on the SHAPE of an object
-			object data = 1.1;
+			object data = 1;
 
 			if (data is int i) WriteLine($"That was an integer: {i}");
 			else if (data is double d) WriteLine("Ooh, a double!");
@@ -141,6 +141,9 @@ namespace SampleConsole
 			};
 
 			WriteLine($"Your toll is: {toll:c}");
+			
+			// string x;
+			// WriteLine((x is null) && false);
 
 		}
 

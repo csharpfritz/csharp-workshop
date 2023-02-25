@@ -10,7 +10,7 @@ namespace BenchmarkDecimal
     // c) 40 times faster
     // d) 100 times faster
 
-    // If you do the same 1,000 multiiplication operations for decimal and double
+    // If you do the same 1,000 multiplication operations for decimal and double
     // the difference in performance will be:
     // a)                      Less than   0.1  ms
     // b) Greater than 0.1 ms, less than   1    ms

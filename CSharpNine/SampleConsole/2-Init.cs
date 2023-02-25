@@ -21,11 +21,24 @@ namespace SampleConsole {
 				Description = "Bad dates..."
 			};
 
+			//l.Severity = LogSeverity.Warning;
+
 			WriteLine(l);
 
 		}
 
 		public struct LogEntry {
+
+			// public LogEntry()
+			// {
+			// 		Console.WriteLine("Parameterless Constructor called");
+			// }
+
+			public LogEntry(LogSeverity severity, DateTime timestamp, string desc) {
+				Severity = severity;
+				LogTimestampUtc = timestamp;
+				Description = desc;
+			}
 
 			public LogSeverity Severity {get; init;}
 

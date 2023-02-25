@@ -1,4 +1,4 @@
-# Session 11 - New C# v9 Features
+# New C# v9 Features
 
 With the new release of .NET 5 in November 2020, a new version of the C# programming language was shipped labeled C# v9.  Let's take a look at five of the largest updates to the language in this session:
 

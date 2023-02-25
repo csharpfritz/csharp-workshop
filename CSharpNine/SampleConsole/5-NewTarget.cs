@@ -11,14 +11,19 @@ namespace SampleConsole {
 		public static void Demo() {
 
 			var t = new NewTarget();
-			// t.Demo1();
-			t.Demo2();
+			t.Demo1();
+			//t.Demo2();
 
 		}
 
 		public void Demo1() {
 
-			List<int> myList = new();      
+/* 1 */			List<int> myList 							= new();      
+/* 1 */			Color myColor 								= new();      
+/* 1 */			System.Drawing.Point myPoint 	= new();      
+/* 2 */			var myList2 = new List<int>();      
+/* 3 */			List<int> myList3 = new List<int>();      
+/* 4 */			dynamic myList4 = new List<int>();
 
 			// Repeated object initializers
 			Point[] numbers = {new (1,1), new (1,2), new (1,3)};
